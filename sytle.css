@@ -1,24 +1,24 @@
 *
 {margin: 0;
  box-sizing: border-box;
- 
- 
+
 }
 
 
 
 body
 {font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+ 
 }
 
-img
-{width: 350px;
- height: 250px;}
+
+
 
 .header-container 
 {color: #f9faf8;
  background-color: #1f2937;
+ display: flex;
+ flex-direction: column;
 }
 
 .logo
@@ -30,7 +30,6 @@ img
 
 .header
 {display: flex;
- flex-basis: 100%;
  justify-content: space-around;
  padding: 20px;
  justify-items: center;
@@ -40,27 +39,37 @@ img
 .header-container-2
 {display: flex;
  justify-content: space-around;
- margin-top: 5%;
- margin: 0px 50px;
- padding-left: 125px;
+ gap: 100px;
+ 
+ justify-items: center;
 }
 
 .header-2
 {display: flex;
- flex-basis: 25%;
+ flex-basis: 40%;
  flex-direction: column;
  margin: 15px 0px;
+}
+
+.img 
+{flex-basis: 48%;
+ height: 250px;
+ margin: 15px 0px;
+}
+
+.sign-up-header
+{background-color: #0047b9;
+ border-radius: 2px;
+ width: 100px;
+ text-align: center;
+ margin: 0px 15px;
+ padding: 10px;
+ font-weight: bold;
 }
 
 .flex-item
 {padding: 20px;
 
-}
-
-
-.img
-{
- margin: 15px 0px;
 }
 
 .body-content
@@ -71,6 +80,12 @@ img
  gap: 90px;
 }
  
+.body-item-container
+{display: flex;
+ flex-direction: column;
+ gap: 20px;
+}
+
 .body-item
 {width: 100px;
  height: 100px;
@@ -176,102 +191,19 @@ h2
 }
 
 
-@media (max-width: 786px)
-{body
- {display: flex;
- flex-direction: column;
- justify-content: center;  
- padding-right: auto;
- }
-     
-    
-    
- .header
-{ display: flex;
- flex-direction: column;
- justify-content: center;
-
+.section-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 
 
-.header-container
-{margin: 0px -50px; 
-}
-
-.logo
-{justify-content: center;}
-
-.header-container-2
-{flex-direction: column;
- 
-}
-
-.header-2
-{justify-content: center;
- margin-left: -100px;
-}
-
-.img
-{margin-left: -100px;
-
-}
-
-.body-item
-{min-width: 40px;
- height: 50px;
- border-radius: 5px;
-
-}
-
-.body-content
-{flex-direction: row;
- align-items: center;
- gap: 10px;
-}
-
-.body-container
-{display: flex;
- justify-content: center;
- flex-direction: column;
-
-}
-
-.txt
-{flex-direction: row;
- gap: 10px; 
- justify-content: center;
- margin-top: -10px;
-}
-
-.container-3
-{flex-direction: row;
- justify-content: center;
-
- margin-right: -50px;
-}
-
-.container-3-box
-{margin: 50px;
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 
-.container-4
-{justify-content: center;
- margin: 20px -5px;
- margin-left: 40px;
- padding: -30px;
- height: 150px;
-
-}
-
-.left
-{gap: 20px;}
-
-
-
-footer
-{ margin-right: -50px;
-}
-
-}
